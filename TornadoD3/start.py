@@ -38,6 +38,8 @@ class MedxApplication(tornado.web.Application):
 
     def __init__(self):
         # self.db = ["Medex"]
+
+
         handlers = [(r'/', IndexHandler), (r'/poem', PoemPageHandler)]
         settings = dict(
             debug=True,
